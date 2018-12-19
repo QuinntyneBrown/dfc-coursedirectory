@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1 class="govuk-heading-l">Add course 2</h1>
+
+<div class="govuk-form-group">
+    <label class="govuk-label" for="with-hint">
+        Start date
+    </label>
+    <span id="rwith-hint-hint" class="govuk-hint">
+        Please select the type of start date for this course
+    </span>
+    <div class="govuk-radios">
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="specific">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                Specific start date
+            </label>
+
+            <div class="govuk-date-input show-radios" id="courseStartDate">
+                <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="dob-day">
+                            Day
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                    </div>
+                </div>
+                <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="dob-month">
+                            Month
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                    </div>
+                </div>
+                <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="dob-year">
+                            Year
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                Scotland
+            </label>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="with-hint">
+            Entry Requirements
+        </label>
+        <span id="rwith-hint-hint" class="govuk-hint">
+            Please list the entry requirements for this course.
+        </span>
+        <textarea class="govuk-textarea js-character-count " id="rwith-hint" name="rwith-hint" rows="5" aria-describedby="rwith-hint-hint"></textarea>
+    </div>
+
+    <span id="rwith-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+        You can enter up to 200 characters
+    </span>
+</div>
+
+
+<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="with-hint">
+            What You'll learn
+        </label>
+        <span id="gwith-hint-hint" class="govuk-hint">
+            Details of topics covered on the course
+        </span>
+        <textarea class="govuk-textarea js-character-count " id="gwith-hint" name="gwith-hint" rows="5" aria-describedby="gwith-hint-hint"></textarea>
+    </div>
+
+    <span id="gwith-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+        You can enter up to 200 characters
+    </span>
+</div>
+
+<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="with-hint">
+            How You'll learn
+        </label>
+        <span id="gwith-hint-hint" class="govuk-hint">
+            Decribe the course delivery
+        </span>
+        <textarea class="govuk-textarea js-character-count " id="gwith-hint" name="gwith-hint" rows="5" aria-describedby="gwith-hint-hint"></textarea>
+    </div>
+
+    <span id="gwith-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+        You can enter up to 200 characters
+    </span>
+</div>
+

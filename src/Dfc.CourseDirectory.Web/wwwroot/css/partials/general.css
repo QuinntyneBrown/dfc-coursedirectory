@@ -5,3 +5,23 @@
   text-decoration: underline;
   background-color: transparent;
 }
+
+#green {
+  display: none;
+  padding: 10px;
+  background-color: #6f6;
+}
+
+#red {
+  display: none;
+  padding: 10px;
+  background-color: #f44;
+}
+
+#courseStartDate {
+  display: none;
+}
+
+input[value="specific"]:checked ~ #courseStartDate {
+  display: block;
+}

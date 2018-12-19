@@ -12,5 +12,13 @@ namespace Dfc.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult AddCourse()
+        {
+            return View();
+        }
+        public IActionResult AddCourse2()
+        {
+            return View();
+        }
     }
 }
