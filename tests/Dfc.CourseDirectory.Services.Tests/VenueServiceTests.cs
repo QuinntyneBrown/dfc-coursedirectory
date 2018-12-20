@@ -32,19 +32,19 @@ namespace Dfc.CourseDirectory.Services.Tests
         [Fact]
         private async void GetByIdIsSuccess()
         {
-            //var mockLogger = new Mock<ILogger<VenueService.VenueService>>();
+            var mockLogger = new Mock<ILogger<VenueService.VenueService>>();
 
-            //var criteria = new GetVenueByIdCriteria("a63bfe28-6ac7-46c8-9efe-37dfb1bd56d7");
+            var criteria = new GetVenueByIdCriteria("a63bfe28-6ac7-46c8-9efe-37dfb1bd56d7");
 
-            //var service = new VenueService.VenueService(mockLogger.Object, new HttpClient(), Options.Create(settings));
+            var service = new VenueService.VenueService(mockLogger.Object, new HttpClient(), Options.Create(settings));
 
-            ////// act
-            //var actual = await service.GetVenueByIdAsync(criteria);
+            //// act
+            var actual = await service.GetVenueByIdAsync(criteria);
 
-            //bool ValidReturnedVenue = actual.Value != null;
+            bool ValidReturnedVenue = actual.Value != null;
 
-            //Assert.True(actual.IsSuccess);
-            //Assert.True(ValidReturnedVenue);
+            Assert.True(actual.IsSuccess);
+            Assert.True(ValidReturnedVenue);
         }
 
         [Fact]
