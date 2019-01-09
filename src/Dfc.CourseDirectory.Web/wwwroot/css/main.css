@@ -5700,6 +5700,10 @@ ul.sort-list {
   display: inline-flex;
 }
 
+.govuk-wide-container {
+  padding: 0px 60px;
+}
+
 #cd-add-qual-button {
   float: right;
 }
