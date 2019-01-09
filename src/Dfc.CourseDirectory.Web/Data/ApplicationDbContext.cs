@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Dfc.CourseDirectory.Areas.Identity.Data;
+﻿using Dfc.CourseDirectory.Web.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

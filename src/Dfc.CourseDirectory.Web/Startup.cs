@@ -25,6 +25,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using System;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Dfc.CourseDirectory.Web.Areas.Identity.Data;
 
 namespace Dfc.CourseDirectory.Web
 {
@@ -106,9 +107,10 @@ namespace Dfc.CourseDirectory.Web
             services.AddIdentity<DfcCourseDirectoryUser, IdentityRole>(options => {
                 options.Tokens.PasswordResetTokenProvider = TokenOptions.DefaultEmailProvider;
                 options.SignIn.RequireConfirmedEmail = true;
-            }).AddEntityFrameworkStores<ApplicationDbContext>()
+                options.Stores.MaxLengthForKeys = 128;
+            }).AddEntityFrameworkStores<DfcCourseDirectoryContext>()
                .AddDefaultTokenProviders();
-
+            
             services.AddScoped<SignInManager<DfcCourseDirectoryUser>, SignInManager<DfcCourseDirectoryUser>>();
 
             // using Microsoft.AspNetCore.Identity.UI.Services;

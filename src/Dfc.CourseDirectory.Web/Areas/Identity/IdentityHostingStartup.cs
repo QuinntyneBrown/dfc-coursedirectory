@@ -1,9 +1,5 @@
-﻿using System;
-using Dfc.CourseDirectory.Areas.Identity.Data;
-using Dfc.CourseDirectory.Models;
+﻿using Dfc.CourseDirectory.Web.Areas.Identity.Data;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

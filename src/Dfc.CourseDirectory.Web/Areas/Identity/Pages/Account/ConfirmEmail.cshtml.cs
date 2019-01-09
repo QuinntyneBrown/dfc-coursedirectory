@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Dfc.CourseDirectory.Web.Areas.Identity.Data;
 using Microsoft.AspNetCore.Authorization;
-using Dfc.CourseDirectory.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
+using System.Collections;
+using System.Threading.Tasks;
 
 namespace Dfc.CourseDirectory.Areas.Identity.Pages.Account
 {
@@ -15,10 +14,12 @@ namespace Dfc.CourseDirectory.Areas.Identity.Pages.Account
     {
         private readonly UserManager<DfcCourseDirectoryUser> _userManager;
 
+        
         public ConfirmEmailModel(UserManager<DfcCourseDirectoryUser> userManager)
         {
             _userManager = userManager;
         }
+
 
         public async Task<IActionResult> OnGetAsync(string userId, string code)
         {

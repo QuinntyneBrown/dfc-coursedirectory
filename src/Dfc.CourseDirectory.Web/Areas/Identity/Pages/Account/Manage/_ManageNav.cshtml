@@ -1,4 +1,5 @@
-﻿@inject SignInManager<DfcCourseDirectoryUser> SignInManager
+﻿@using Dfc.CourseDirectory.Web.Areas.Identity.Data
+@inject SignInManager<DfcCourseDirectoryUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Dfc.CourseDirectory.Web.Areas.Identity.Data;
 
 namespace Dfc.CourseDirectory.Areas.Identity.Pages.Account
 {
